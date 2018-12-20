@@ -16,7 +16,7 @@ Full release is 1 GB and this way, we only run the environment with a setup of 9
 
 
 
-## Good To Know Scripts
+## Good To Know
 
 ### `./docker run -it --rm ead_elixir bash`
 
