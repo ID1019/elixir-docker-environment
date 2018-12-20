@@ -3,7 +3,8 @@
 FROM elixir:alpine
 
 # Create and set home directory
-WORKDIR /elixir
+RUN mkdir /ead
+WORKDIR /ead
 
 # Configure required environment
 ENV MIX_ENV test
@@ -22,5 +23,5 @@ RUN mix local.rebar --force
 
 
 # Copy all application files
-COPY ./tests ./tests
-COPY ./exercises ./exercises
+COPY . .
+

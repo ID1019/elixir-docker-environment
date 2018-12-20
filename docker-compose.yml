@@ -6,5 +6,5 @@ services:
         context: .
         dockerfile: Dockerfile
     volumes:
-      - '.:/elixir'
-    entrypoint: ["bash", 'setup.sh']
+      - .:/ead/
+    entrypoint: ['bash', "setup.sh"] 
