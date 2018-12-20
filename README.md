@@ -12,7 +12,7 @@ Clone this repo, install docker, run this on the bash of the host enviroment tha
 
 This image also has a built in bash on top of the elixir-alpine. This helps us to have the ability of going through our files inside the container and run any script easily inside the elixir environment while also benefitting from the lightweight release of the elixir-alpine. 
 
-Full release is 1 GB and this way, we only run the environment with a setup of 90 MBs by only having the things we really we need to be able to run exs files. We can also add more stuff whenever needed.
+Full release is 1 GB and this way, we only run the environment with a setup of 90 MBs by only having the things we really need to be able to run exs files. We can also add more stuff whenever needed.
 
 
 
