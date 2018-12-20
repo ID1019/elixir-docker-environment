@@ -18,13 +18,29 @@ Full release is 1 GB and this way, we only run the environment with a setup of 9
 
 ## Good To Know
 
-### `docker run -it --rm ead_elixir bash`
+### `docker-compose up`
 
-Use this to open the bash of the elixir container.
+Run this whenever you want an elixir environment.
+
+### `docker exec -it ead_elixir_number-of-container bash`
+
+Run this on another bash tab for any number of the elixir container to acces it's bash. They have the host folder binded and run as a service, so whatever you update in the main folder of the container on host will be updated also on the container.
 
 ### `elixir your-script-name.exs`
 
 Once in bash of the container, you can easily run the exs files by going into the folder where the exs file is and just run the command above with your exs file being the argument for the elixir command.
+
+### `docker exec -it ead_elixir_number-of-container iex`
+
+Use this to run an iex session on a specific elixir container.
+
+### `docker-compose up --build`
+
+Run this whenever you want to rebuild the image.
+
+### `docker run -it --rm ead_elixir bash`
+
+Use this to open the bash of an elixir container that is not binded to the host folder.
 
 ### `docker run -it --rm ead_elixir`
 
