@@ -22,4 +22,5 @@ RUN mix local.rebar --force
 
 
 # Copy all application files
-COPY . .
+COPY ./tests ./tests
+COPY ./exercises ./exercises
