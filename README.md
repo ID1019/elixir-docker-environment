@@ -1,6 +1,6 @@
 # elixir-docker-template
 
-this repository is built for people who just want to have the elixir as a process container and use all the functions without installing anything but docker to the host machine environment. The docker image is already connected to the host folder, so any script you write can be easily ran without rebuilding the image or anything.
+this repository is built for people who just want to have the elixir as a process container and use all the functions without installing anything but docker to the host machine environment. The docker containers of this image are already connected to the host folder, so any script you write can run without rebuilding the image or anything.
 
 ## Setup 
 
