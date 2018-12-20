@@ -18,15 +18,15 @@ Full release is 1 GB and this way, we only run the environment with a setup of 9
 
 ## Good To Know
 
-### `./docker run -it --rm ead_elixir bash`
+### `docker run -it --rm ead_elixir bash`
 
 Use this to open the bash of the elixir container.
 
-### `./elixir your-script-name.exs`
+### `elixir your-script-name.exs`
 
 Once in bash of the container, you can easily run the exs files by going into the folder where the exs file is and just run the command above with your exs file being the argument for the elixir command.
 
-### `./docker run -it --rm ead_elixir`
+### `docker run -it --rm ead_elixir`
 
 Use this to run a new iex session.
 
