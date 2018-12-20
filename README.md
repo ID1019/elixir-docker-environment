@@ -12,7 +12,7 @@ Clone this repo, install docker, run this on bash
 
 ### `./run-elixir.sh`
 
-Use this to run a specific exs file
+Use this to run a specific exs file, provide an argument such as "your-script-name.exs"
 
 ### `./run-elixir-it.sh`
 
