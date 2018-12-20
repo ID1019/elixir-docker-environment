@@ -1,0 +1,10 @@
+version: '3.5'
+
+services:
+  elixir-build-env:
+    build: 
+        context: .
+        dockerfile: Dockerfile
+    volumes:
+      - '.:/elixir-build-env'
+    entrypoint: ["bash","setup.sh"]
