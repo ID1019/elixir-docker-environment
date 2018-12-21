@@ -1,50 +1,78 @@
-# elixir-docker-template
+# Dockerizer Elixir Development Environment
 
-this repository is built for people who just want to have the elixir as a process container and use all the functions without installing anything but docker to the host machine environment. The docker containers of this image are already connected to the host folder, so any script you write can run without rebuilding the image or anything.
+This repository is built for the course ID1019 at KTH. The intended usage is for learning purposes, but can also be easily scaled to production whenever needed. Feel free to use it and if you think that something is missing or could be done much better, please contact me.
 
-## Setup 
+## Usage
 
-Clone this repo, install docker, run this on the bash of the host enviroment that docker is running
+### Step 1
 
-### `docker-compose up`
+#### Docker 
+
+What is Docker? https://en.wikipedia.org/wiki/Docker_(software)
+
+Install Docker by following the instructions at https://www.docker.com/get-started.
+
+### Step 2
+
+#### `git clone https://github.com/murikarox/ead.git`
+
+Clone this repository to your own workspace.
+
+#### `cd ead`
+
+Change directory to the repository folder.
+
+### Step 3
+
+This setup of dockerized Elixir uses a Makefile for easy usage. In order to be able to use the Makefile, you don't need to do anything else on unix based systems. However, on Windows, you need to install GNUWIN and add the path of the bin directory to your PATH in environment variables of the host machine. If you are using an unix based system, you can skip to the step 4.
+
+#### GNUWIN
+
+Go to http://gnuwin32.sourceforge.net/packages/make.htm and from the download section click on the setup link of the "Complete Package". After downloading and installing GNUWIN, you need to add the `gnuwin\bin` folder to your PATH. This folder is dependent on where you install GNUWIN, so you need to go into your system folders and find the bin folder at the path you told the installer to install the GNUWIN at. 
+
+To add the PATH, right click on "My Computer" in explorer and select "properties". Then select "Environment Variables" and click on PATH to edit it in the opened window. You can click on "New" and just paste the PATH of the bin folder and click OK afterwards,
+
+You can now use GNUWIN in powershell or CMD.
+
+
+### Step 4
+
+#### `make`
+
+Once in the folder of this repository, just run this command and it will automatically compose the docker container, assuming that you have followed throughly until this point.
+
+### Step 5
+
+You can now work easily using the commands below.
+
+## Good To Know
+
+### `make`
+
+Default command for make is to compose the container and open the Elixir iex session.
+
+### `make start`
+
+It has the functionality as `make` and can be used to open the Elixir iex session.
+
+### `make sh`
+
+This command can be used to open a bash session inside the container to be able to run a specific exs file by typing
+`elixir script-name.exs` in the bash session.
+
+### `make status`
+
+This can be used to see the active Docker container at that moment
+
+### `make stop`
+
+This can be used to stop the Docker container.
 
 # Important Notice
 
 This image also has a built in bash on top of the elixir-alpine. This helps us to have the ability of going through our files inside the container and run any script easily inside the elixir environment while also benefitting from the lightweight release of the elixir-alpine. 
 
-Full release is 1 GB and this way, we only run the environment with a setup of 90 MBs by only having the things we really need to be able to run exs files. We can also add more stuff whenever needed.
-
-
-
-## Good To Know
-
-### `docker-compose up`
-
-Run this whenever you want an elixir environment.
-
-### `docker exec -it ead_elixir_number-of-container bash`
-
-Run this on another bash tab for any number of the elixir container to acces it's bash. They have the host folder binded and run as a service, so whatever you update in the main folder of the container on host will be updated also on the container.
-
-### `elixir your-script-name.exs`
-
-Once in bash of the container, you can easily run the exs files by going into the folder where the exs file is and just run the command above with your exs file being the argument for the elixir command.
-
-### `docker exec -it ead_elixir_number-of-container iex`
-
-Use this to run an iex session on a specific elixir container.
-
-### `docker-compose up --build`
-
-Run this whenever you want to rebuild the image.
-
-### `docker run -it --rm ead_elixir bash`
-
-Use this to open the bash of an elixir container that is not binded to the host folder.
-
-### `docker run -it --rm ead_elixir`
-
-Use this to run a new iex session.
+Full release is 1 GB and this way, we only run the environment with a setup of 90 MBs by only having the things we really need to be able to run exs files. We can also add more functionality whenever needed.
 
 ## Contributing
 
@@ -57,6 +85,7 @@ Use this to run a new iex session.
 ## Maintainers
 
 Murat Eksi – info@murateksi.com
+Simone Stefani
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
