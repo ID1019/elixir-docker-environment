@@ -1,4 +1,4 @@
-# Dockerizer Elixir Development Environment
+# Dockerized Elixir Development Environment
 
 This repository is built for the course ID1019 at KTH. The intended usage is for learning purposes, but can also be easily scaled to production whenever needed. Feel free to use it and if you think that something is missing or could be done much better, please contact me.
 
@@ -30,7 +30,7 @@ This setup of dockerized Elixir uses a Makefile for easy usage. In order to be a
 
 Go to http://gnuwin32.sourceforge.net/packages/make.htm and from the download section click on the setup link of the "Complete Package". After downloading and installing GNUWIN, you need to add the `gnuwin\bin` folder to your PATH. This folder is dependent on where you install GNUWIN, so you need to go into your system folders and find the bin folder at the path you told the installer to install the GNUWIN at. 
 
-To add the PATH, right click on "My Computer" in explorer and select "properties". Then select "Environment Variables" and click on PATH to edit it in the opened window. You can click on "New" and just paste the PATH of the bin folder and click OK afterwards,
+To add the PATH, right click on "My Computer" in explorer and select "properties". Then select "Environment Variables" and click on PATH to edit it in the opened window. You can click on "New" and just paste the PATH of the bin folder and click OK afterwards.
 
 You can now use GNUWIN in powershell or CMD.
 
@@ -62,7 +62,7 @@ This command can be used to open a bash session inside the container to be able 
 
 ### `make status`
 
-This can be used to see the active Docker container at that moment
+This can be used to see the active Docker container at that moment.
 
 ### `make stop`
 
