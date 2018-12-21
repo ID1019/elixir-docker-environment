@@ -84,7 +84,7 @@ Full release is 1 GB and this way, we only run the environment with a setup of 9
 
 ## Maintainers
 
-Murat Eksi – info@murateksi.com
+Murat Eksi – info@murateksi.com  
 Simone Stefani
 
 ## License
