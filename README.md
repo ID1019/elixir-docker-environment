@@ -47,28 +47,28 @@ You can now work easily using the commands below.
 
 ## Good To Know
 
-### `make`
+#### `make`
 
 Default command for make is to compose the container and open the Elixir iex session.
 
-### `make start`
+#### `make start`
 
 It has the functionality as `make` and can be used to open the Elixir iex session.
 
-### `make sh`
+#### `make sh`
 
 This command can be used to open a bash session inside the container to be able to run a specific exs file by typing
 `elixir script-name.exs` in the bash session.
 
-### `make status`
+#### `make status`
 
 This can be used to see the active Docker container at that moment.
 
-### `make stop`
+#### `make stop`
 
 This can be used to stop the Docker container.
 
-# Important Notice
+## Important Notice
 
 This image also has a built in bash on top of the elixir-alpine. This helps us to have the ability of going through our files inside the container and run any script easily inside the elixir environment while also benefitting from the lightweight release of the elixir-alpine. 
 
@@ -78,6 +78,3 @@ Full release is 1 GB and this way, we only run the environment with a setup of 9
 
 [Murat Eksi](https://github.com/murikarox) – info@murateksi.com  
 [Simone Stefani](https://github.com/SimoneStefani) - s.stefani95@gmail.com
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
