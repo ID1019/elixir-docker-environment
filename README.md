@@ -14,11 +14,11 @@ Install Docker by following the instructions at https://www.docker.com/get-start
 
 ### Step 2
 
-#### `git clone https://github.com/murikarox/ead.git`
+#### `git clone https://github.com/ID1019/elixir-docker-environment`
 
 Clone this repository to your own workspace.
 
-#### `cd ead`
+#### `cd elixir-docker-environment`
 
 Change directory to the repository folder.
 
@@ -39,7 +39,7 @@ You can now use GNUWIN in powershell or CMD.
 
 #### `make`
 
-Once in the folder of this repository, just run this command and it will automatically compose the docker container, assuming that you have followed throughly until this point.
+Once in the folder of this repository, just run this command and it will automatically compose the docker container, assuming that you have followed thoroughly until this point.
 
 ### Step 5
 
@@ -74,18 +74,10 @@ This image also has a built in bash on top of the elixir-alpine. This helps us t
 
 Full release is 1 GB and this way, we only run the environment with a setup of 90 MBs by only having the things we really need to be able to run exs files. We can also add more functionality whenever needed.
 
-## Contributing
-
-1. Fork it (<https://github.com/murikarox/base-setup-drd.git/fork>)
-2. Create your feature branch (`git checkout -b feature/something`)
-3. Commit your changes (`git commit -am 'Added Something`)
-4. Push to the branch (`git push origin feature/something`)
-5. Create a new Pull Request
-
 ## Contributors
 
-Murat Eksi – info@murateksi.com  
-Simone Stefani
+[Murat Eksi](https://github.com/murikarox) – info@murateksi.com  
+[Simone Stefani](https://github.com/SimoneStefani) - s.stefani95@gmail.com
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
